@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condemned</title>
+    <link rel="stylesheet" href="styles/artistyles.css">
+    <link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+    />
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = "1";
+        };
+    </script>
+</head>
+<body class="website">
+<div class="artwork__page" id="artwork__page">
+    <nav class="navbar">
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html#home" class="navbar__links" id="navbar__logo">MIGHT</a>
+                <a href="index.html#home" class="navbar__links" id="navbar__logo--mert">MERT</a>
+            </li>
+            <li class="navbar__item">
+                <a href="index.html#about" class="navbar__links" id="about-page">about</a>
+            </li>
+            <button class="portfolio__btn"><li class="navbar__item">
+                <a href="index.html#portfolio" class="navbar__links" id="portfolio-page">return</a>
+            </li></button>
+            <div class="dropdown-container" id="dropdown-cont">
+                <a href="index.html#abysse" id="abyss" class="abyss">abyss & elysium</a>
+                <a href="index.html#portraitse" id="portraits">portraits</a>
+                <a href="index.html#environmentse" id="environments">environments</a>
+                <a href="index.html#sketchese" id="sketches">sketches</a>
+                <a href="index.html#olde" id="old">old</a>
+            </div>
+            <li class="navbar__item">
+                <a href="index.html#contact" class="navbar__links" id="contact-page">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Artwork-->
+    <div class="artwork__container" id="artwork">
+        <div class="artwork__wrapper">
+            <a class="artwork__card" id="artwork__card"><img src="styles/paintings/condemned.png" alt="painting"></a></div>
+
+        <div class="text__wrapper">
+            <div class="collection__title">abyss & elysium</div>
+            <div class="artwork__year">2020</div>
+            <h1 class="artwork__title">CONDEMNED TO A THOUSAND YEARS OF SLUMBER</h1>
+            <div class="dots">. . .</div>
+            <p class="paragraph">》Condemned to a thousand years of slumber;<br>
+                Feet turning numb - soaked in water<br>
+                Incessantly repeating the same old blunder-<br>
+                Nonetheless, He may not falter《<br><br>
+                this piece was made in the september of 2020<br> and aims to depict a state of life in which<br> the individual keeps making the same blunders</p>
+        </div>
+    </div>
+</div>
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <a href="impressum.html" class=".footer__link--items" target="_blank"><h2>impressum</h2></a>
+                </div>
+                <div class="footer__link--items">
+                    <a href="dataprotec.html" class=".footer__link--items" target="_blank"><h2>data protection</h2></a>
+                </div>
+            </div>
+    <section class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="index.html#home" id="footer__logo">
+                    <img src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <p class="website__rights">© 2023 MightMert. all rights reserved.</p>
+            <div class="social__icons">
+                <a href="https://www.instagram.com/mightmert/" class="social__icon--link" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+            </div>
+            <p class="tripple__dots">. . .</p>
+        </div>
+    </div>
+    </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
