@@ -1,11 +1,15 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
+const navLogo = document.querySelector('#navbar__logo');
 
 // Display Mobile Menu
 const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
 }
+
+menu.addEventListener('click', mobileMenu);
+
 
 // Logo hover
 const navbarLogo = document.getElementById('navbar__logo');
@@ -28,7 +32,6 @@ navbarLogoMert.addEventListener('mouseleave', () => {
 });
 
 // splashscreen
-
 $(document).ready(function() {
   $(document).on('click keydown', function handleSplashScreen(e) {
     if (e.type === 'click' || e.keyCode !== undefined) {
@@ -62,7 +65,7 @@ const dropdownMenu = () => {
     const dropdownContainer = document.querySelector('#dropdown-cont');
     const scrollDistance = 1500; // Set the scroll distance here
     const scrollDistance2 = 4645; // Scroll distance end
-    const windowWidth = 844; // minimum window width
+    const windowWidth = 768; // minimum window width
     
     window.addEventListener('scroll', () => {
       if (window.scrollY > scrollDistance && window.scrollY < scrollDistance2 && window.screen.width > windowWidth) {
