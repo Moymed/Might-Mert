@@ -62,9 +62,10 @@ const dropdownMenu = () => {
     const dropdownContainer = document.querySelector('#dropdown-cont');
     const scrollDistance = 1500; // Set the scroll distance here
     const scrollDistance2 = 4645; // Scroll distance end
+    const windowWidth = 844; // minimum window width
     
     window.addEventListener('scroll', () => {
-      if (window.scrollY > scrollDistance && window.scrollY < scrollDistance2) {
+      if (window.scrollY > scrollDistance && window.scrollY < scrollDistance2 && window.screen.width > windowWidth) {
         dropdownContainer.classList.add('open');
       } else{
         dropdownContainer.classList.remove('open');
